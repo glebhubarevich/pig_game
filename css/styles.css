@@ -1,0 +1,258 @@
+/*******ZEROING STYLES*******/
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:active,
+:focus {
+  outline: 0;
+}
+
+a:active,
+a:focus {
+  outline: 0;
+}
+
+aside,
+footer,
+header,
+nav {
+  display: block;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-iner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/***************************/
+* {
+  font-family: Nunito, sans-serif;
+}
+
+body {
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
+  background: linear-gradient(to right, #f5af19, #f12711);
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  width: 80vw;
+}
+
+.fields {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.field {
+  padding: 80px 100px;
+  background-color: #ffffff66;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.field.active {
+  background-color: #ffffffaa;
+  -webkit-box-shadow: #22222299 2px 2px 20px 0px;
+          box-shadow: #22222299 2px 2px 20px 0px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.field > h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.field > p {
+  font-size: 80px;
+  color: #f12711;
+  margin-bottom: 120px;
+}
+
+.field__left {
+  border-radius: 15px 0 0 15px;
+}
+
+.field__right {
+  border-radius: 0 15px 15px 0;
+}
+
+.field__current-score_container {
+  padding: 30px 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#f37315), to(#f26214));
+  background: linear-gradient(to right, #f37315, #f26214);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.field__current-score_container > h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.field__current-score_container > p {
+  font-size: 40px;
+  color: #fff;
+}
+
+.button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #ffffffaa;
+  color: #222;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.button::first-letter {
+  font-size: 120%;
+  margin-right: 10px;
+}
+
+.button:active {
+  -webkit-transform: translateX(-50%) translateY(3px);
+          transform: translateX(-50%) translateY(3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.new_game {
+  top: 45px;
+}
+
+.roll_dice {
+  bottom: 170px;
+}
+
+.hold {
+  bottom: 88px;
+}
+
+.dice__img {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}

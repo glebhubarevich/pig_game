@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Pig Game</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="fields">
+				<div class="field field__left active">
+					<h2>Player 1</h2>
+					<p class="field__score totalScore1">0</p>
+					<div class="field__current-score_container">
+						<h3>current</h3>
+						<p class="field__current-score_label current1">0</p>
+					</div>
+				</div>
+				<div class="field field__right">
+					<h2>Player 2</h2>
+					<p class="field__score totalScore2">0</p>
+					<div class="field__current-score_container">
+						<h3>current</h3>
+						<p class="field__current-score_label current2">0</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="floating"> -->
+			<button class="button new_game">🔄 New game</button>
+			<img class="dice__img" src="img/dice-1.png" alt="" />
+			<button class="button roll_dice">🎲 Roll dice</button>
+			<button class="button hold">📥 Hold</button>
+			<!-- </div> -->
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
